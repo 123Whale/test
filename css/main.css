@@ -1,0 +1,398 @@
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --green: rgb(0,113,61);
+}
+
+*{
+    box-sizing: inherit;
+}
+li,ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Muli', sans-serif;
+    box-sizing: border-box;
+    min-height: 1000px;
+}
+button a:hover{
+    color: #fff;
+}
+.grid{
+    width: 1400px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__full-width{
+    width: 100%;
+    box-sizing:border-box;
+}
+
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* ---------------------HEADER--------------------------- */
+.header{
+    height: 150px;
+    background-color: #fff;
+}
+.header__menu{
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    width: 100%;
+}
+.header__navbar,
+.header__menu{
+    display:flex ;
+    justify-content: space-around;
+    
+}
+.header__navbar-list{
+    list-style: none;
+    
+}
+.header__navber-item,
+.header__menu-item{
+    margin: 10px 4px;
+    position: relative;
+}
+.header__navber-item,
+.header__navber-item-link,
+.header__menu-item-link{
+    display: inline-block;
+    font-size: 1.5rem;
+    color: var(--black-color);
+    text-decoration: none;
+    font-weight: 300;
+}
+.header__navber-item--strong,
+.header__menu-item--strong{
+    font-weight:bold;
+}
+.header__navber-item--border{
+    padding: 0 10px;
+    border-right: 1px solid #333;
+    color: var(--green);
+    font-weight: bold;
+}
+.header__navber-item--border2{
+    border: 1px solid green;
+    padding: 10px 17px;
+    border-radius: 10px;
+}
+.header__navber-item--img img{
+    width: 70px;
+    height: 47px;
+}
+.header__menu-item-text1{
+    font-size: 16px;
+    position:absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    padding: 20px 30px ;
+    visibility: hidden;
+    transition: 0.2s;
+    z-index: 1;
+    background: #fff;
+}
+.header__menu-list li:hover .header__menu-item-text1{
+    visibility: visible;
+    color: var(--green);
+}
+.header__menu-item-text2{
+    font-size: 16px;
+    position:absolute;
+    width: 200px;
+    height: 300px;
+    border: 1px solid #ccc;
+    padding: 20px 30px ;
+    visibility: hidden;
+    transition: 0.2s;
+    z-index: 1;
+    background: #fff;
+}
+.header__menu-list li:hover .header__menu-item-text2{
+    visibility: visible;
+    color: var(--green);
+}
+.header__menu-item-text3{
+    font-size: 16px;
+    position:absolute;
+    width: 200px;
+    height: 170px;
+    border: 1px solid #ccc;
+    padding: 20px 30px ;
+    visibility: hidden;
+    transition: 0.2s;
+    z-index: 1;
+    background: #fff;
+}
+.header__menu-list li:hover .header__menu-item-text3{
+    visibility: visible;
+    color: var(--green);
+}
+.header__menu-item-text4{
+    font-size: 16px;
+    position:absolute;
+    width: 950px;
+    height: 350px;
+    border: 1px solid #ccc;
+    padding: 20px 30px ;
+    visibility: hidden;
+    transition: 0.2s;
+    z-index: 1;
+    background: #fff;
+}
+.header__menu-list li:hover .header__menu-item-text4{
+    visibility: visible;
+    color: var(--green);
+}
+.header__menu-item-text5{
+    font-size: 16px;
+    position:absolute;
+    width: 600px;
+    height: 300px;
+    border: 1px solid #ccc;
+    padding: 10px 30px ;
+    visibility: hidden;
+    transition: 0.2s;
+    z-index: 1;
+    background: #fff;
+}
+.header__menu-list li:hover .header__menu-item-text5{
+    visibility: visible;
+    color: var(--green);
+}
+.header__menu-item-text6{
+    font-size: 16px;
+    position:absolute;
+    width: 400px;
+    height: 200px;
+    border: 1px solid #ccc;
+    padding: 10px 30px ;
+    visibility: hidden;
+    transition: 0.2s;
+    z-index: 1;
+    background: #fff;
+}
+.header__menu-list li:hover .header__menu-item-text6{
+    visibility: visible;
+    color: var(--green);
+}
+.header__menu-item-text7{
+    font-size: 16px;
+    position:absolute;
+    width: 200px;
+    height: 100px;
+    border: 1px solid #ccc;
+    padding: 10px 30px ;
+    visibility: hidden;
+    transition: 0.2s;
+    z-index: 1;
+    background: #fff;
+}
+.header__menu-list li:hover .header__menu-item-text7{
+    visibility: visible;
+    color: var(--green);
+}
+.header__menu-list li a p:hover{
+    color: #fff;
+    background-color: var(--green);
+}
+
+.nextto{
+    display: flex;
+    justify-content: space-around;
+}
+/* ---------------------------------CONTAINER-------------------------------------- */
+.container{
+    float: left;
+    width: 100%;
+    flex-direction: column;
+}
+.container__background{
+    position: relative;
+}
+
+.container__background-first-pic img{
+    display: block;
+    box-sizing: border-box;
+    height: 530px;
+    float: left;
+    width: 530px;
+    margin-top: 150px;
+}
+.container__background-first-text{
+    display: block;
+    box-sizing: border-box;
+    float: right;
+    width: 30%;
+    height: 500px;
+    font-size: 16px;
+    margin-top: 200px;
+    margin-right: 100px;
+}
+.btn{
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    
+}
+
+.container__background-second-text{
+    display: block;
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    height: 500px;
+    font-size: 16px;
+    padding-top: 100px;
+}
+
+.container__background-second-pic img{
+    display: block;
+    box-sizing: border-box;
+    height: 530px;
+    float: right;
+    width: 450px;
+    margin: 100px 0;
+    
+}
+.container__background-2{
+    float: left;
+    min-height: 700px;
+    width: 100%;
+    background: var(--green);
+    color: #fff;
+}
+.container__background-2-text{
+    width: 1400px;
+    max-width: 100%;
+    margin: 100px auto;
+    font-size: 20px;
+}
+.container__background-2-button{
+    margin: 0 250px;
+}
+.container__background-2-button button{
+    box-sizing: border-box;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    padding: 12px 70px;
+    font-size: 14px;
+    text-align: left;
+}
+
+/* ---------------------------------------------FOOTER-------------------------------------------- */
+footer{
+    float: left;
+    width: 100%;
+    min-height: 130px;
+    background-color: #ccc;
+    }
+    .row{
+        float: left;
+        width: 100%;
+    }
+    .boxcenter2{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .boxfooter1{
+        margin: 5px 0 ;
+        width: 45%;
+        float: left;
+    }
+    .boxfooter2{
+        margin: 10px 0 ;
+        width: 25%;
+        float: left;
+    }
+    .mrr2{
+        margin-right: 2%;
+    }
+    .boxfooter3{
+        margin: 10px 0 ;
+        width: 25%;
+        float: right;
+    }
+    .textcenter{
+        text-align: center;
+    }
+    .colorc{
+        color:var(--black-color);
+    }
+    .mrb10{
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    input{
+        padding: 10px 5px;
+        border: 1px solid var(--green);
+    }
+    button{
+        background-color: transparent;
+        outline: none;
+        padding: 10px 7px;
+        border: 1px solid var(--green);
+        color: var(--green);
+        border-radius: 5px;
+    }
+    button:hover{
+        background-color: var(--green);
+        color: #fff;
+        cursor: pointer;
+    }
+    .border{
+        margin-right: 5px;
+        margin-left: 5px;
+        border-right: 1px solid #333 ;
+    }
+    /* auuthen modal */
+    .modal{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+    }
+    .auth-form__container{
+        padding: 0 32px;
+    }
+    .auth-form__header{
+        display: flex;
+        align-items: center;
+    }
+    .modal__overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    .modal__body{
+        width: 300px;
+        height: 300px;
+        background-color: #fff;
+        margin: auto;
+        position: relative;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    .auth-form__group input{
+        padding: 10px 35px;
+    }
+    .auth-form__form button{
+        margin-top: 30px;
+        padding: 1px 100px;
+    }
